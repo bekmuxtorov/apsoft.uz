@@ -1,9 +1,10 @@
 from django.db import models
+from django.utils.translation import gettext_lazy as _
 
 
 class Client(models.Model):
     name = models.CharField(max_length=200)
-    image = models.ImageField(upload_to='clients')
+    image = models.ImageField(upload_to=_('clients'))
     added_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -11,10 +12,10 @@ class Client(models.Model):
 
 
 class Contact(models.Model):
-    full_name = models.CharField(max_length=200, verbose_name='Full name')
-    email = models.EmailField(max_length=200, verbose_name='Email')
-    subject = models.CharField(max_length=200, verbose_name='Subject')
-    message = models.TextField(max_length=400, verbose_name='Message')
+    full_name = models.CharField(max_length=200, verbose_name=_('Full name'))
+    email = models.EmailField(max_length=200, verbose_name=_('Email'))
+    subject = models.CharField(max_length=200, verbose_name=_('Subject'))
+    message = models.TextField(max_length=400, verbose_name=_('Message'))
     added_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
