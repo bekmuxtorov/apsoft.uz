@@ -1,0 +1,521 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+<section id="hero" class="d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                <h1 data-aos="fade-up">1C xizmatlari</h1>
+                <h2 data-aos="fade-up" data-aos-delay="400">Biz 1C platformasi bilan ishlashda 15 yildan ortiq
+                    tajribaga ega mutaxassislari jamoasimiz.
+                </h2>
+                <div data-aos="fade-up" data-aos-delay="800">
+                    <a href="{% url 'home' %}#contact" class="btn-get-started scrollto">Boshlash</a>
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+                <img src="{% static 'img/thought-leadership.png' %}" class="img-fluid animated" alt="">
+            </div>
+        </div>
+    </div>
+</section><!-- End Hero -->
+
+<section class="">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h2 class="featurette-heading text-center">All Personal Soft</h2>
+                <h2 class="featurette-heading text-center"><label>1C xizmatlari </label></h2>
+                <p class="text-center lead">
+                    <label>
+                        Korxonalarga bugungi biznesning raqamli muammolariga javob beradigan, tezroq o'sib boradigan
+                        va
+                        o'z bozorlarida etakchilik qiladigan moslashuvchan ERP yechimi. QBA IC yechimlari
+                        tashkilotlarga
+                        turli xil biznes jarayonlarini avtomatlashtirishga, ishlashning asosiy ko'rsatkichlarini
+                        kuzatishga, kompaniyaning bo'limlari va joylari o'rtasidagi faoliyatni va o'zaro
+                        munosabatlarni
+                        muvofiqlashtirishga imkon beradi.
+                    </label>
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-12 section-display">
+                <div
+                    class="section-display d-flex flex-sm-column flex-md-column flex-lg-row justify-content-center mb-3">
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/image_!.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue">
+                                    <label>
+                                        Inventarizatsiya va omborni boshqarish
+                                    </label>
+                                </h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/image_2.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue">
+                                    <label> Kadrlar va ish haqini boshqarish</label>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/bug_va_soliq.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue">
+                                    <label> Buxgalteriya va soliq hisobi</label>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/biznes_.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue"><label> Biznes operatsiyalari</label></h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="section-display d-flex flex-sm-column flex-md-column flex-lg-row align-item-center justify-content-center mb-3">
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/sotish_va_tarqatish.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue">
+                                    <label>
+
+                                        Sotish va tarqatish
+                                    </label>
+                                </h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/xariq_qqs2.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue"><label> Xarid qilish va QQS </label></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/xarid_qqs.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue"><label> Xarid qilish va QQS</label></h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/loyihani_hisoblash.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue"><label> Loyihani hisoblash</label></h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="section-display d-flex flex-sm-column flex-md-column flex-lg-row align-item-center justify-content-center mb-3">
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/crm.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue">
+                                    <label>
+                                        CRM<br>
+                                    </label>
+                                </h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/mis_boshqaruv.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue"><label> MIS va boshqaruv panellari</label></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/pul_oqimi.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue"><label> Pul oqimlarini boshqarish</label></h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/it_qollab.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue"><label> ITni qo'llab-quvvatlash</label></h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div
+                    class="section-display d-flex flex-sm-column flex-md-column flex-lg-row align-item-center justify-content-center mb-3">
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/iot_avto.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue">
+                                    <label>
+                                        IOT &amp; Avtomatlashtirish
+                                    </label>
+                                </h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/api.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue"><label> API xizmat va uchinchi tomon bilan
+                                        integratsiya</label>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/ishlab_boshqaruv.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue"><label> Ishlab chiqarishni boshqarish </label></h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/profilaktika.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue"><label> Profilaktik xizmatlar </label></h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main><!-- End #main -->
+
+<section class="strong-section">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-12 ">
+                <h2 class=" featurette-heading text-center">Bizning kuchli tomonlarimiz</h2>
+                <p class="text-center lead">
+                    <label>
+                        Zamonaviy axborot texnologiyalarini joylash orqali biznes jarayonlarini o'zgartirishda
+                        mijozlarimizga sezilarli ta'sir
+                        ko'rsatishni maqsad qilganmiz. Biz ilg'or texnologiyalarga e'tibor qaratamiz va dasturiy
+                        ta'minot, infratuzilma va bilim
+                        platformalarida texnologiyaga asoslangan bo'lmagan yechimlarni taqdim etamiz.
+                    </label>
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div
+                    class="section-display d-flex flex-sm-column flex-md-column flex-lg-row justify-content-center mb-3 strengths">
+                    <div class="highlight-box-2 mx-auto mt-3 ">
+                        <div class="d-flex flex-column mb-3">
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue">
+                                    <label style="padding-bottom: 10px; font-size: 24px;">2+</label>
+                                    <label>
+                                        dan ortiq malakali mutaxassislar
+                                    </label>
+                                </h5>
+                                <br>
+                            </div>
+                            <div class="text-center">
+                                <img src="{% static 'img/svg_images/mutahasiss.svg' %}">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="highlight-box-2 mx-auto mt-3 ">
+                        <div class="d-flex flex-column mb-3">
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue">
+                                    <label style="padding-bottom: 10px; font-size: 24px;">2+</label>
+                                    <label>
+                                        dan ortiq sertifikatlangan mutaxassislar
+                                    </label>
+                                </h5>
+                                <br>
+                            </div>
+                            <div class="mt-2 text-center">
+                                <img src="{% static 'img/svg_images/sertifikatli_mutax.svg' %}">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="highlight-box-2 mx-auto mt-3 ">
+                        <div class="d-flex flex-column mb-3">
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue">
+                                    <label style="padding-bottom: 10px; font-size: 24px;">2+</label>
+                                    <label>
+                                        dan ortiq butun dunyo bo'ylab amalga oshirish
+                                    </label>
+                                </h5>
+                                <br>
+                            </div>
+                            <div class="text-center">
+                                <img src="{% static 'img/svg_images/dunyo.svg' %}">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="highlight-box-2 mx-auto mt-3 ">
+                        <div class="d-flex flex-column mb-3">
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue">
+                                    <label style="padding-bottom: 10px; font-size: 24px;">2+</label>
+                                    <label>
+                                        dan ortiq sohalar bo'yicha global mijozlar
+                                    </label>
+                                </h5>
+                                <br>
+                            </div>
+                            <div class="text-center">
+                                <img src="{% static 'img/svg_images/global.svg' %}">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</section>
+
+<section class="">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h2 class="featurette-heading text-center">Biz xizmat ko'rsatadigan sohalar</h2>
+                <p class="text-center lead">
+                    <label>
+                        Biz xizmat ko'rsatadigan sohalar
+                    </label>
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-12 ">
+                <div
+                    class="section-display d-flex flex-sm-column flex-md-column flex-lg-row justify-content-center mb-3 strengths">
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/agro.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue">
+                                    <label>
+                                        Agro
+                                    </label>
+                                </h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/ogitlar.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue">
+                                    <label>
+                                        O'g'itlar
+                                    </label>
+                                </h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/toqimachilik.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue">
+                                    <label>
+                                        To'qimachilik
+                                    </label>
+                                </h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/it.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue">
+                                    <label>
+                                        IT
+                                    </label>
+                                </h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="section-display d-flex flex-sm-column flex-md-column flex-lg-row justify-content-center mb-3 strengths">
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/neft_gaz.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue">
+                                    <label>
+                                        Neft va Gaz
+                                    </label>
+                                </h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/qurilish.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue">
+                                    <label>
+                                        Qurilish materiallari
+                                    </label>
+                                </h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/oziq_ovqat.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue">
+                                    <label>
+                                        Oziq ovqat
+                                    </label>
+                                </h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box-2 mx-auto mt-3">
+                        <div class="d-flex flex-column mb-3">
+
+                            <div class="mt-5 text-center">
+                                <img src="{% static 'img/svg_images/avtomobil.svg' %}">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="dark-blue">
+                                    <label>
+                                        Transport
+                                    </label>
+                                </h5>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+{% endblock content %}
