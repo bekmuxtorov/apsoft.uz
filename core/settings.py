@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rosetta',
+    'parler',
 
     # Local apps
     'base',
@@ -124,7 +125,7 @@ LANGUAGE_CODE = 'uz'
 
 TIME_ZONE = 'Asia/Tashkent'
 
-USE_I18N = True
+USE_L10N = True
 
 USE_TZ = True
 
@@ -152,3 +153,15 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'uz', },  # English
+        {'code': 'en', },  # French
+        {'code': 'ru', },  # Spanish
+    ),
+    'default': {
+        'fallbacks': ['uz'],
+        'hide_untranslated': False,
+    }
+}

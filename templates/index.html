@@ -1,24 +1,30 @@
 {% extends "base.html" %}
+{% load i18n %}
 {% load static %}
 
 {% block content %}
 
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center">
-
   <div class="container">
     <div class="row">
+  {% if msg %}
+      <h4 class="success" data-aos="">{% trans "Xabaringiz muaffiqiyatli jo'natildi!" %}</h4>
+  {% endif %}
+
       <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-        <h1 data-aos="fade-up">All Personal Soft bilan biznesingizni rivojlantiring</h1>
-        <h2 data-aos="fade-up" data-aos-delay="400">Biz 1C platformasi bilan ishlashda 15 yildan ortiq
+        <h1 data-aos="fade-up">{% trans "All Personal Soft bilan biznesingizni rivojlantiring" %}</h1>
+        <h2 data-aos="fade-up" data-aos-delay="400">{% blocktrans %}
+          Biz 1C platformasi bilan ishlashda 15 yildan ortiq
           tajribaga ega mutaxassislari jamoasimiz.
+          {% endblocktrans %}
         </h2>
         <div data-aos="fade-up" data-aos-delay="800">
-          <a href="#services" class="btn-get-started scrollto">Boshlash</a>
+          <a href="#services" class="btn-get-started scrollto">{% trans "Boshlash" %}</a>
         </div>
       </div>
       <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
-        <img src="{% static 'img/hero-img.png' %}" class="img-fluid animated" alt="">
+        <img src="{% static 'img/hero-new.jpg' %}" class="img-fluid animated" alt="">
       </div>
     </div>
   </div>
@@ -49,7 +55,9 @@
 
 
     </div>
-    <a href="./more_clients.html" class="btn-learn-more more-button clients-button">Ko'proq o'qish</a>
+    <a href="{% url 'more_clients' %}" class="btn-learn-more more-button clients-button">
+      {% trans "Ko'proq o'qish" %}
+    </a>
 
   </section><!-- End Clients Section -->
 
@@ -58,29 +66,35 @@
     <div class="container">
 
       <div class="section-title" data-aos="fade-up">
-        <h2>Biz haqimizda</h2>
+        <h2>{% trans "Biz haqimizda" %}</h2>
       </div>
 
       <div class="row content">
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
           <p style="text-align: justify;">
+            {% blocktrans %}
             "All Personal Soft" XK -- bu moliya-iqtisodiyot sohasi uchun buxgalteriya hisobini avtomatlashtirish,
             moliyaviy va
             boshqaruv hisobi kabilarga dasturiy yechimlarni ishlab chiqishda professionallar jamoasiga ega.
+            {% endblocktrans %}
           </p>
           <p>
+            {% blocktrans %}
             Buxgalteriya hisobi va moliyaviy menejment samaradorligini oshirish uchun dasturiy ta'minotni ishlab
             chiqish
             bo'yicha
-            malakali mutaxassislarga ega bo'lish muhimdir </p>
+            malakali mutaxassislarga ega bo'lish muhimdir
+            {% endblocktrans %}</p>
           <p>
+            {% blocktrans %}
             Muhim biznes jarayonlarini soddalashtirish va optimallashtirishga yordam beradigan bunday mutaxassislar
             borligi har doim
             yaxshi.
-          </p>
+            {% endblocktrans %} </p>
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
           <p>
+            {% blocktrans %}
             IT loyihalarini amalga oshirishda to'plangan tajriba va All Personal Soft guruhining yuqori malakali
             mutaxassislari
             Sizga korporativ va davlat mijozlarining eng qat'iy talablariga javob beradigan yuqori sifatli AT
@@ -89,8 +103,9 @@
             All Personal Soft korxonasi bilan hamkorlik sizga axborot texnologiyalari sohasidagi muammolarni mukammal
             sifatli va eng
             qisqa vaqt ichida hal qilishga yordam beradi.
+            {% endblocktrans %}
           </p>
-          <a href="#" class="btn-learn-more more-button">Ko'proq o'qish</a>
+          <a href="#" class="btn-learn-more more-button">{% trans "Ko'proq o'qish" %}</a>
         </div>
       </div>
 
@@ -102,9 +117,11 @@
     <div class="container">
 
       <div class="section-title" data-aos="fade-up">
-        <h2>Xizmatlar</h2>
-        <p>Biz korporativ va davlat mijozlarining eng qat'iy talablariga javob beradigan AT xizmatlarini taqdim
-          etamiz</p>
+        <h2>{% trans "Xizmatlar" %}</h2>
+        <p>{% blocktrans %}
+          Biz korporativ va davlat mijozlarining eng qat'iy talablariga javob beradigan AT xizmatlarini taqdim
+          etamiz
+          {% endblocktrans %}</p>
       </div>
 
       <div class="row">
@@ -112,35 +129,43 @@
           <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="bx bxl-dribbble"></i></div>
             <h4 class="title"><a href="">1C:Предприятие</a></h4>
-            <p class="description" style="text-align: left;">"All Personal Soft" XK 1C kompaniyasining Farg`onadagi
-              rasmiy vakili bo'lib, '1C:Franchayzing' tarmog'ida ro'yxatdan o'tgan.</p>
+            <p class="description" style="text-align: left;">{% blocktrans %}
+              "All Personal Soft" XK 1C kompaniyasining Farg`onadagi
+              rasmiy vakili bo'lib, '1C:Franchayzing' tarmog'ida ro'yxatdan o'tgan.
+              {% endblocktrans %}</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class="bx bx-file"></i></div>
-            <h4 class="title"><a href="">Elektron hisob-fakturalar</a></h4>
-            <p class="description">Iqtisodiyot (raqamli iqtisodiyot) sohasidagi yangiliklarni hisobga olgan holda,
-              korxona boshqa dasturiy mahsulotlari uchun</p>
+            <h4 class="title"><a href="">{% trans "Elektron hisob-fakturalar" %}</a></h4>
+            <p class="description">{% blocktrans %}
+              Iqtisodiyot (raqamli iqtisodiyot) sohasidagi yangiliklarni hisobga olgan holda,
+              korxona boshqa dasturiy mahsulotlari uchun
+              {% endblocktrans %}</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
             <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4 class="title"><a href="">Boshqarish dasturlari</a></h4>
-            <p class="description">Tashkilotlarni boshqarish uchun dasturlarni ishlab chiqish (mobil, masofaviy va hk)
-              va joriy etish mumkin</p>
+            <h4 class="title"><a href="">{% trans "Boshqarish dasturlari" %}</a></h4>
+            <p class="description">{% blocktrans %}
+              Tashkilotlarni boshqarish uchun dasturlarni ishlab chiqish (mobil, masofaviy va hk)
+              va joriy etish mumkin
+              {% endblocktrans %}</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
             <div class="icon"><i class="bx bx-world"></i></div>
-            <h4 class="title"><a href="">Tizimlar</a></h4>
-            <p class="description">ERP tizimlarini joriy qilish, litsenziyalar, avtomatlashtirish uchun dasturiy
+            <h4 class="title"><a href="">{% trans "Tizimlar" %}</a></h4>
+            <p class="description">{% blocktrans %}
+              ERP tizimlarini joriy qilish, litsenziyalar, avtomatlashtirish uchun dasturiy
               mahsulotlar.
+              {% endblocktrans %}
             </p>
           </div>
         </div>
@@ -151,36 +176,46 @@
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4 class="title"><a href="">Kiberxavfsizlik bo'yicha tahlilchi</a></h4>
-            <p class="description" style="text-align: left;">Tizimlarimizni kiberxavfsizlik tahlilchisi sifatida
-              himoya qiling</p>
+            <h4 class="title"><a href="">{% trans "Kiberxavfsizlik bo'yicha tahlilchi" %}</a></h4>
+            <p class="description" style="text-align: left;">{% blocktrans %}
+              Tizimlarimizni kiberxavfsizlik tahlilchisi
+              sifatida
+              himoya qiling
+              {% endblocktrans %} </p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class="bx bx-file"></i></div>
-            <h4 class="title"><a href="">Bulutli hisoblash</a></h4>
-            <p class="description">Iqtisodiyot (raqamli iqtisodiyot) sohasidagi yangiliklarni hisobga olgan holda,
-              korxona boshqa dasturiy mahsulotlari uchun</p>
+            <h4 class="title"><a href="">{% trans "Bulutli hisoblash" %}</a></h4>
+            <p class="description">
+              {% blocktrans %}
+              Iqtisodiyot (raqamli iqtisodiyot)
+              sohasidagi yangiliklarni hisobga olgan holda, korxona boshqa dasturiy mahsulotlari uchun
+              {% endblocktrans %}"</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
             <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4 class="title"><a href="">Dasturiy ta'minotni ishlab chiquvchi</a></h4>
-            <p class="description">Tashkilotlarni boshqarish uchun dasturlarni ishlab chiqish (mobil, masofaviy va hk)
-              va joriy etish mumkin</p>
+            <h4 class="title"><a href="">{% trans "Dasturiy ta'minotni ishlab chiquvchi" %}</a></h4>
+            <p class="description">{% blocktrans %}
+              Tashkilotlarni boshqarish uchun dasturlarni ishlab chiqish (mobil, masofaviy va hk)
+              va joriy etish mumkin
+              {% endblocktrans %}</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
             <div class="icon"><i class="bx bx-world"></i></div>
-            <h4 class="title"><a href="">UX Designer</a></h4>
-            <p class="description">ERP tizimlarini joriy qilish, litsenziyalar, avtomatlashtirish uchun dasturiy
+            <h4 class="title"><a href="">{% trans "UX Designer" %}</a></h4>
+            <p class="description">{% blocktrans %}
+              ERP tizimlarini joriy qilish, litsenziyalar, avtomatlashtirish uchun dasturiy
               mahsulotlar.
+              {% endblocktrans %}
             </p>
           </div>
         </div>
@@ -191,36 +226,44 @@
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4 class="title"><a href="">Data Scientist</a></h4>
-            <p class="description" style="text-align: left;">"All Personal Soft" XK 1C kompaniyasining Farg`onadagi
-              rasmiy vakili bo'lib, '1C:Franchayzing' tarmog'ida ro'yxatdan o'tgan.</p>
+            <h4 class="title"><a href="">{% trans "Data Scientist" %}</a></h4>
+            <p class="description" style="text-align: left;">{% blocktrans %}
+              "All Personal Soft" XK 1C kompaniyasining Farg`onadagi
+              rasmiy vakili bo'lib, '1C:Franchayzing' tarmog'ida ro'yxatdan o'tgan.
+              {% endblocktrans %}</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class="bx bx-file"></i></div>
-            <h4 class="title"><a href="">Sun'iy intellekt</a></h4>
-            <p class="description">Iqtisodiyot (raqamli iqtisodiyot) sohasidagi yangiliklarni hisobga olgan holda,
-              korxona boshqa dasturiy mahsulotlari uchun</p>
+            <h4 class="title"><a href="">{% trans "Sun'iy intellekt" %}</a></h4>
+            <p class="description">{% blocktrans %}
+              Iqtisodiyot (raqamli iqtisodiyot) sohasidagi yangiliklarni hisobga olgan holda,
+              korxona boshqa dasturiy mahsulotlari uchun
+              {% endblocktrans %}</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
             <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4 class="title"><a href="">Veb-ishlab chiqish</a></h4>
-            <p class="description">Tashkilotlarni boshqarish uchun dasturlarni ishlab chiqish (mobil, masofaviy va hk)
-              va joriy etish mumkin</p>
+            <h4 class="title"><a href="">{% trans "Veb-ishlab chiqish" %}</a></h4>
+            <p class="description">{% blocktrans %}
+              Tashkilotlarni boshqarish uchun dasturlarni ishlab chiqish (mobil, masofaviy va hk)
+              va joriy etish mumkin
+              {% endblocktrans %}</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
             <div class="icon"><i class="bx bx-world"></i></div>
-            <h4 class="title"><a href="">Tarmoq muhandisi</a></h4>
-            <p class="description">ERP tizimlarini joriy qilish, litsenziyalar, avtomatlashtirish uchun dasturiy
+            <h4 class="title"><a href="">{% trans "Tarmoq muhandisi" %}</a></h4>
+            <p class="description">{% blocktrans %}
+              ERP tizimlarini joriy qilish, litsenziyalar, avtomatlashtirish uchun dasturiy
               mahsulotlar.
+              {% endblocktrans %}
             </p>
           </div>
         </div>
@@ -228,7 +271,7 @@
       </div>
 
     </div>
-    <a href="{% url 'more_services' %}" class="btn-learn-more more-button">Ko'proq o'qish</a>
+    <a href="{% url 'more_services' %}" class="btn-learn-more more-button">{% trans "Ko'proq o'qish" %}</a>
 
   </section><!-- End Services Section -->
 
@@ -241,10 +284,12 @@
           <div class="card card_1" style="background-image: url({% static '/img/more-services-1.jpg' %});"
             data-aos="fade-up" data-aos-delay="100">
             <div class="card-body">
-              <h5 class="card-title"><a href="">Avtomatlashtirish</a></h5>
-              <p class="card-text" style="text-align: justify;">Elektron hisob-fakturalar, ishonchnomalar, bajarilgan
+              <h5 class="card-title"><a href="">{% trans "Avtomatlashtirish" %}</a></h5>
+              <p class="card-text" style="text-align: justify;">{% blocktrans %}
+                Elektron hisob-fakturalar, ishonchnomalar, bajarilgan
                 ishlar dalolatnomalari, ish vaqtini hisobga olish turniketlari,
-                kompyuter dasturiy ta`minoti bilan bog`lash imkoniyatiga ega.</p>
+                kompyuter dasturiy ta`minoti bilan bog`lash imkoniyatiga ega.
+                {% endblocktrans %}</p>
               <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
             </div>
           </div>
@@ -253,11 +298,13 @@
           <div class="card" style="background-image: url({% static '/img/more-services-2.jpg' %});" data-aos="fade-up"
             data-aos-delay="200">
             <div class="card-body">
-              <h5 class="card-title"><a href="">Osonlashtirish</a></h5>
-              <p class="card-text">Yoqilg'i quyish shoxobchalari dasturlari,
+              <h5 class="card-title"><a href="">{% trans "Osonlashtirish" %}</a></h5>
+              <p class="card-text">{% blocktrans %}
+                Yoqilg'i quyish shoxobchalari dasturlari,
                 elektron tarozilar, bank-mijoz, dispenserlar va boshqa
                 elektron o'lchovlarini
-                kompyuter dasturiy ta`minoti bilan bog`lash imkoniyatiga ega.</p>
+                kompyuter dasturiy ta`minoti bilan bog`lash imkoniyatiga ega.
+                {% endblocktrans %}</p>
               <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
             </div>
           </div>
@@ -267,9 +314,11 @@
           <div class="card" style="background-image: url({% static '/img/more-services-3.jpg' %});" data-aos="fade-up"
             data-aos-delay="100">
             <div class="card-body">
-              <h5 class="card-title"><a href="">Mobil dasturlar</a></h5>
-              <p class="card-text">Tashkilotlarni boshqarishni qulaylashtirish uchun mobil va desktop dasturlar ishlab
-                chiqish va ularni qo'llab-quvvatlash.</p>
+              <h5 class="card-title"><a href="">{% trans "Mobil dasturlar" %}</a></h5>
+              <p class="card-text">{% blocktrans %}
+                Tashkilotlarni boshqarishni qulaylashtirish uchun mobil va desktop dasturlar ishlab
+                chiqish va ularni qo'llab-quvvatlash.
+                {% endblocktrans %}</p>
               <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
             </div>
           </div>
@@ -278,9 +327,11 @@
           <div class="card" style="background-image: url({% static '/img/more-services-4.jpg' %});" data-aos="fade-up"
             data-aos-delay="200">
             <div class="card-body">
-              <h5 class="card-title"><a href="">Web saytlar qurish</a></h5>
-              <p class="card-text">Tashkilotlarni rasmiy saytlarini qurish, serverda saqlash va ularni
-                qo'llab-quvvatlash.</p>
+              <h5 class="card-title"><a href="">{% trans "Web saytlar qurish" %}</a></h5>
+              <p class="card-text">{% blocktrans %}
+                Tashkilotlarni rasmiy saytlarini qurish, serverda saqlash va ularni
+                qo'llab-quvvatlash.
+                {% endblocktrans %}</p>
               <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
             </div>
           </div>
@@ -295,81 +346,83 @@
     <div class="container">
 
       <div class="section-title" data-aos="fade-up">
-        <h2>Xususiyatlar</h2>
-        <p>Kompaniyaning o'ziga xos hususiyatlari</p>
+        <h2>{% trans "Xususiyatlar" %}</h2>
+        <p>{% blocktrans %}
+          Kompaniyaning o'ziga xos hususiyatlari
+          {% endblocktrans %}</p>
       </div>
 
       <div class="row" data-aos="fade-up" data-aos-delay="300">
         <div class="col-lg-3 col-md-4">
           <div class="icon-box">
             <i class="ri-time-line" style="color: #ffbb2c;"></i>
-            <h3><a href="">Tezkor</a></h3>
+            <h3><a href="">{% trans "Tezkor" %}</a></h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
             <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-            <h3><a href="">Sifatli</a></h3>
+            <h3><a href="">{% trans "Sifatli" %}</a></h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
             <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-            <h3><a href="">Aniq</a></h3>
+            <h3><a href="">{% trans "Aniq" %}</a></h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
           <div class="icon-box">
             <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-            <h3><a href="">Mukammal</a></h3>
+            <h3><a href="">{% trans "Mukammal" %}</a></h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
             <i class="ri-database-2-line" style="color: #47aeff;"></i>
-            <h3><a href="">Xavfsiz</a></h3>
+            <h3><a href="">{% trans "Xavfsiz" %}</a></h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
             <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-            <h3><a href="">Ishonchli</a></h3>
+            <h3><a href="">{% trans "Ishonchli" %}</a></h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
             <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-            <h3><a href="">Litsenziyali</a></h3>
+            <h3><a href="">{% trans "Litsenziyali" %}</a></h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
             <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-            <h3><a href="">Raqobatbardosh</a></h3>
+            <h3><a href="">{% trans "Raqobatbardosh" %}</a></h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
             <i class="ri-anchor-line" style="color: #b2904f;"></i>
-            <h3><a href="">Zamonaviy</a></h3>
+            <h3><a href="">{% trans "Zamonaviy" %}</a></h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
             <i class="ri-disc-line" style="color: #b20969;"></i>
-            <h3><a href="">Aktual</a></h3>
+            <h3><a href="">{% trans "Aktual" %}</a></h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
             <i class="ri-base-station-line" style="color: #ff5828;"></i>
-            <h3><a href="">Moslashuvchan</a></h3>
+            <h3><a href="">{% trans "Moslashuvchan" %}</a></h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
             <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-            <h3><a href="">Takrorlanmas</a></h3>
+            <h3><a href="">{% trans "Takrorlanmas" %}</a></h3>
           </div>
         </div>
       </div>

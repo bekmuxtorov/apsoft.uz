@@ -2,31 +2,678 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-10 06:20+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2023-04-12 22:25+0500\n"
+"PO-Revision-Date: 2023-04-12 22:35+0500\n"
+"Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
-#: .\core\settings.py:131
-msgid "Uzbek"
-msgstr ""
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: .\core\settings.py:132
-msgid "English"
-msgstr ""
+#: .\base\models.py:10
+msgid "clients"
+msgstr "клиенты"
+
+#: .\base\models.py:18
+msgid "Full name"
+msgstr "Полное имя"
+
+#: .\base\models.py:19 .\templates\base.html:129
+msgid "Email"
+msgstr "Электронная почта"
+
+#: .\base\models.py:20
+msgid "Subject"
+msgstr "Предмет"
+
+#: .\base\models.py:21
+msgid "Message"
+msgstr "Сообщение"
 
 #: .\core\settings.py:133
+msgid "Uzbek"
+msgstr "Узбекский"
+
+#: .\core\settings.py:134
+msgid "English"
+msgstr "Английский"
+
+#: .\core\settings.py:135
 msgid "Russian"
+msgstr "Russian"
+
+#: .\templates\base.html:10
+msgid "All Personal Soft || IT kompaniya"
+msgstr "All Personal Soft || ИТ-компания"
+
+#: .\templates\base.html:44
+msgid "Bosh sahifa"
+msgstr "Домашняя страница"
+
+#: .\templates\base.html:45
+msgid "Haqimizda"
+msgstr "О нас"
+
+#: .\templates\base.html:46 .\templates\base.html:170
+#: .\templates\index.html:120
+msgid "Xizmatlar"
+msgstr "Услуги"
+
+#: .\templates\base.html:47
+msgid "Til"
+msgstr "Язык"
+
+#: .\templates\base.html:50
+msgid "uz"
+msgstr "уз"
+
+#: .\templates\base.html:51
+msgid "en"
+msgstr "ен "
+
+#: .\templates\base.html:52
+msgid "ru"
+msgstr "ру  "
+
+#: .\templates\base.html:55
+msgid "Bog'lanish"
+msgstr "Связь"
+
+#: .\templates\base.html:56 .\templates\index.html:23
+msgid "Boshlash"
+msgstr "Начинать"
+
+#: .\templates\base.html:72
+msgid "Biz bilan bo'glaning"
+msgstr "Связаться с нами"
+
+#: .\templates\base.html:81
+msgid ""
+"\n"
+"                            \"All Personal Soft\" korxonasi loyihalarni boshqarish zamonaviy\n"
+"                            uslublari\n"
+"                            va zamonaviy rivojlanish\n"
+"                            texnologiyalaridan\n"
+"                            foydalangan holda dastlabki tahlil va yaratilishdan yakuniy mahsulotlarni ishlab chiqarish\n"
+"                            va\n"
+"                            texnik\n"
+"                            xizmat\n"
+"                            ko'rsatishgacha bo'lgan ishlarning to'liq siklini amalga oshira oladi.\n"
+"                            "
 msgstr ""
+"\n"
+"Предприятие \"Олл Персонал Софт\" - это современный проектный менеджмент\n"
+"стили\n"
+"и современное развитие\n"
+"из технологий\n"
+"с помощью предварительного анализа и создания для производства конечной продукции\n"
+"и\n"
+"технический\n"
+"услуга\n"
+"может выполнять полный цикл работ вплоть до показа."
+
+#: .\templates\base.html:105
+msgid "S.Temur 68d/12"
+msgstr "С. Темур 68д/12"
+
+#: .\templates\base.html:105
+msgid "Uzbekistan, Farg'ona shahar"
+msgstr "Узбекистан, город Фергана"
+
+#: .\templates\base.html:125
+msgid "Ism va familiya"
+msgstr "Имя и фамилия"
+
+#: .\templates\base.html:133
+msgid "Mavzu"
+msgstr "Предмет"
+
+#: .\templates\base.html:136
+msgid "Xabar"
+msgstr "Сообщение"
+
+#: .\templates\base.html:141
+msgid "Xabarni jo'natish"
+msgstr "Отправить сообщение"
+
+#: .\templates\base.html:160
+msgid "Barcha huquqlar himoyalangan"
+msgstr "все права защищены"
+
+#: .\templates\base.html:168
+msgid "Asosiy sahifa"
+msgstr "Главная страница"
+
+#: .\templates\base.html:169 .\templates\index.html:69
+msgid "Biz haqimizda"
+msgstr "O нас"
+
+#: .\templates\index.html:12
+msgid "Xabaringiz muaffiqiyatli jo'natildi!"
+msgstr "Ваше сообщение было отправлено успешно!"
+
+#: .\templates\index.html:16
+msgid "All Personal Soft bilan biznesingizni rivojlantiring"
+msgstr "Развивайте свой бизнес с All Personal Soft"
+
+#: .\templates\index.html:17
+msgid ""
+"\n"
+"          Biz 1C platformasi bilan ishlashda 15 yildan ortiq\n"
+"          tajribaga ega mutaxassislari jamoasimiz.\n"
+"          "
+msgstr ""
+"\n"
+"Работаем с платформой 1С более 15 лет\n"
+"наша команда опытных специалистов."
+
+#: .\templates\index.html:59 .\templates\index.html:108
+#: .\templates\index.html:274
+msgid "Ko'proq o'qish"
+msgstr "Читать далее"
+
+#: .\templates\index.html:75
+msgid ""
+"\n"
+"            \"All Personal Soft\" XK -- bu moliya-iqtisodiyot sohasi uchun buxgalteriya hisobini avtomatlashtirish,\n"
+"            moliyaviy va\n"
+"            boshqaruv hisobi kabilarga dasturiy yechimlarni ishlab chiqishda professionallar jamoasiga ega.\n"
+"            "
+msgstr ""
+"\n"
+"ЖК «Всё Персональное Софт» — автоматизация учёта в финансово-экономической сфере,\n"
+"финансовый и\n"
+"имеет команду профессионалов в области разработки программных решений для управленческого учета."
+
+#: .\templates\index.html:82
+msgid ""
+"\n"
+"            Buxgalteriya hisobi va moliyaviy menejment samaradorligini oshirish uchun dasturiy ta'minotni ishlab\n"
+"            chiqish\n"
+"            bo'yicha\n"
+"            malakali mutaxassislarga ega bo'lish muhimdir\n"
+"            "
+msgstr ""
+"\n"
+"Разработка программного обеспечения для повышения эффективности учета и управления финансами\n"
+"Выход\n"
+"в соответствии с\n"
+"важно иметь квалифицированных специалистов"
+
+#: .\templates\index.html:89
+msgid ""
+"\n"
+"            Muhim biznes jarayonlarini soddalashtirish va optimallashtirishga yordam beradigan bunday mutaxassislar\n"
+"            borligi har doim\n"
+"            yaxshi.\n"
+"            "
+msgstr ""
+"\n"
+"Такие специалисты помогают упростить и оптимизировать важные бизнес-процессы\n"
+"всегда\n"
+"хороший"
+
+#: .\templates\index.html:97
+msgid ""
+"\n"
+"            IT loyihalarini amalga oshirishda to'plangan tajriba va All Personal Soft guruhining yuqori malakali\n"
+"            mutaxassislari\n"
+"            Sizga korporativ va davlat mijozlarining eng qat'iy talablariga javob beradigan yuqori sifatli AT\n"
+"            xizmatlarini taqdim\n"
+"            etish imkonini beradi. <br><br>\n"
+"            All Personal Soft korxonasi bilan hamkorlik sizga axborot texnologiyalari sohasidagi muammolarni mukammal\n"
+"            sifatli va eng\n"
+"            qisqa vaqt ichida hal qilishga yordam beradi.\n"
+"            "
+msgstr ""
+"\n"
+"Накопленный опыт реализации ИТ-проектов и высококвалифицированная группа All Personal Soft\n"
+"специалисты\n"
+"Качественные ИТ, отвечающие самым строгим требованиям корпоративных и государственных заказчиков\n"
+"предоставлять услуги\n"
+"позволяет добиться. <br><br>\n"
+"Сотрудничество с компанией All Personal Soft поможет вам решить задачи в сфере информационных технологий\n"
+"качество и самое\n"
+"помогает решить в короткие сроки."
+
+#: .\templates\index.html:121
+msgid ""
+"\n"
+"          Biz korporativ va davlat mijozlarining eng qat'iy talablariga javob beradigan AT xizmatlarini taqdim\n"
+"          etamiz\n"
+"          "
+msgstr ""
+"\n"
+"Мы предоставляем ИТ-услуги, отвечающие самым строгим требованиям корпоративных и государственных клиентов\n"
+"мы будем"
+
+#: .\templates\index.html:132 .\templates\index.html:230
+msgid ""
+"\n"
+"              \"All Personal Soft\" XK 1C kompaniyasining Farg`onadagi\n"
+"              rasmiy vakili bo'lib, '1C:Franchayzing' tarmog'ida ro'yxatdan o'tgan.\n"
+"              "
+msgstr ""
+"\n"
+"Компания \"All Personal Soft\" ХК 1С в Фергане\n"
+"является официальным представителем и зарегистрирована в сети «1С:Франчайзинг»."
+
+#: .\templates\index.html:142
+msgid "Elektron hisob-fakturalar"
+msgstr "Электронные счета"
+
+#: .\templates\index.html:143 .\templates\index.html:241
+msgid ""
+"\n"
+"              Iqtisodiyot (raqamli iqtisodiyot) sohasidagi yangiliklarni hisobga olgan holda,\n"
+"              korxona boshqa dasturiy mahsulotlari uchun\n"
+"              "
+msgstr ""
+"\n"
+"Принимая во внимание инновации в области экономики (цифровая экономика),\n"
+"для других корпоративных программных продуктов"
+
+#: .\templates\index.html:153
+msgid "Boshqarish dasturlari"
+msgstr "Программы управления"
+
+#: .\templates\index.html:154 .\templates\index.html:204
+#: .\templates\index.html:252
+msgid ""
+"\n"
+"              Tashkilotlarni boshqarish uchun dasturlarni ishlab chiqish (mobil, masofaviy va hk)\n"
+"              va joriy etish mumkin\n"
+"              "
+msgstr ""
+"\n"
+"Разработка приложений для управления организациями (мобильными, удаленными и т.д.)\n"
+"и может быть реализован"
+
+#: .\templates\index.html:164
+msgid "Tizimlar"
+msgstr "Системы"
+
+#: .\templates\index.html:165 .\templates\index.html:215
+#: .\templates\index.html:263
+msgid ""
+"\n"
+"              ERP tizimlarini joriy qilish, litsenziyalar, avtomatlashtirish uchun dasturiy\n"
+"              mahsulotlar.\n"
+"              "
+msgstr ""
+"\n"
+"Внедрение ERP систем, лицензии, ПО для автоматизации\n"
+"продукты"
+
+#: .\templates\index.html:179
+msgid "Kiberxavfsizlik bo'yicha tahlilchi"
+msgstr "Аналитик по кибербезопасности"
+
+#: .\templates\index.html:180
+msgid ""
+"\n"
+"              Tizimlarimizni kiberxavfsizlik tahlilchisi\n"
+"              sifatida\n"
+"              himoya qiling\n"
+"              "
+msgstr ""
+"\n"
+"Аналитик по кибербезопасности наших систем\n"
+"как\n"
+"защищать"
+
+#: .\templates\index.html:191
+msgid "Bulutli hisoblash"
+msgstr "Облачные вычисления"
+
+#: .\templates\index.html:193
+msgid ""
+"\n"
+"              Iqtisodiyot (raqamli iqtisodiyot)\n"
+"              sohasidagi yangiliklarni hisobga olgan holda, korxona boshqa dasturiy mahsulotlari uchun\n"
+"              "
+msgstr ""
+"\n"
+"Экономика (Цифровая экономика)\n"
+"с учетом инноваций в сфере, для других программных продуктов предприятия"
+
+#: .\templates\index.html:203
+msgid "Dasturiy ta'minotni ishlab chiquvchi"
+msgstr "Разработчик программного обеспечения"
+
+#: .\templates\index.html:214
+msgid "UX Designer"
+msgstr "UX-дизайнер"
+
+#: .\templates\index.html:229
+msgid "Data Scientist"
+msgstr "Специалист по данным"
+
+#: .\templates\index.html:240
+msgid "Sun'iy intellekt"
+msgstr "Искусственный интеллект"
+
+#: .\templates\index.html:251
+msgid "Veb-ishlab chiqish"
+msgstr "Веб-разработка"
+
+#: .\templates\index.html:262
+msgid "Tarmoq muhandisi"
+msgstr "Сетевой инженер"
+
+#: .\templates\index.html:287
+msgid "Avtomatlashtirish"
+msgstr "Автоматизация"
+
+#: .\templates\index.html:288
+msgid ""
+"\n"
+"                Elektron hisob-fakturalar, ishonchnomalar, bajarilgan\n"
+"                ishlar dalolatnomalari, ish vaqtini hisobga olish turniketlari,\n"
+"                kompyuter dasturiy ta`minoti bilan bog`lash imkoniyatiga ega.\n"
+"                "
+msgstr ""
+"\n"
+"Электронные счета, доверенность, сделано\n"
+"трудовые книжки, турникеты для учета рабочего времени,\n"
+"имеет возможность подключения к компьютерному программному обеспечению."
+
+#: .\templates\index.html:301
+msgid "Osonlashtirish"
+msgstr "Фасилитация"
+
+#: .\templates\index.html:302
+msgid ""
+"\n"
+"                Yoqilg'i quyish shoxobchalari dasturlari,\n"
+"                elektron tarozilar, bank-mijoz, dispenserlar va boshqa\n"
+"                elektron o'lchovlarini\n"
+"                kompyuter dasturiy ta`minoti bilan bog`lash imkoniyatiga ega.\n"
+"                "
+msgstr ""
+"\n"
+"Программы АЗС,\n"
+"электронные весы, банк-клиент, диспенсеры и др.\n"
+"электронные измерения\n"
+"имеет возможность подключения к компьютерному программному обеспечению."
+
+#: .\templates\index.html:317
+msgid "Mobil dasturlar"
+msgstr "Мобильные программы"
+
+#: .\templates\index.html:318
+msgid ""
+"\n"
+"                Tashkilotlarni boshqarishni qulaylashtirish uchun mobil va desktop dasturlar ishlab\n"
+"                chiqish va ularni qo'llab-quvvatlash.\n"
+"                "
+msgstr ""
+"\n"
+"Разработка мобильных и настольных приложений для облегчения управления организациями\n"
+"выйти и поддержать их."
+
+#: .\templates\index.html:330
+msgid "Web saytlar qurish"
+msgstr "Создание веб-сайтов"
+
+#: .\templates\index.html:331
+msgid ""
+"\n"
+"                Tashkilotlarni rasmiy saytlarini qurish, serverda saqlash va ularni\n"
+"                qo'llab-quvvatlash.\n"
+"                "
+msgstr ""
+"\n"
+"Создание официальных сайтов организаций, сохранение их на сервере и использование\n"
+"поддерживать."
+
+#: .\templates\index.html:349
+msgid "Xususiyatlar"
+msgstr "Функции"
+
+#: .\templates\index.html:350
+msgid ""
+"\n"
+"          Kompaniyaning o'ziga xos hususiyatlari\n"
+"          "
+msgstr ""
+"\n"
+"Специфика компании"
+
+#: .\templates\index.html:359
+msgid "Tezkor"
+msgstr "Быстрый"
+
+#: .\templates\index.html:365
+msgid "Sifatli"
+msgstr "Качество"
+
+#: .\templates\index.html:371
+msgid "Aniq"
+msgstr "Четко"
+
+#: .\templates\index.html:377
+msgid "Mukammal"
+msgstr "Идеальный"
+
+#: .\templates\index.html:383
+msgid "Xavfsiz"
+msgstr "Безопасный"
+
+#: .\templates\index.html:389
+msgid "Ishonchli"
+msgstr "Надежный"
+
+#: .\templates\index.html:395
+msgid "Litsenziyali"
+msgstr "Лицензия"
+
+#: .\templates\index.html:401
+msgid "Raqobatbardosh"
+msgstr "Конкурентоспособный"
+
+#: .\templates\index.html:407
+msgid "Zamonaviy"
+msgstr "Современный"
+
+#: .\templates\index.html:413
+msgid "Aktual"
+msgstr "Текущий"
+
+#: .\templates\index.html:419
+msgid "Moslashuvchan"
+msgstr "Адаптивный"
+
+#: .\templates\index.html:425
+msgid "Takrorlanmas"
+msgstr "Неповторимый"
+
+#: .\templates\more_clients.html:12 .\templates\more_services.html:376
+msgid "Biz xizmat ko'rsatadigan sohalar"
+msgstr "Области, которые мы обслуживаем"
+
+#: .\templates\more_clients.html:15
+msgid "Biz xizmat ko'rsatadigan kompaniyalar"
+msgstr "Компании, которые мы обслуживаем"
+
+#: .\templates\more_services.html:11 .\templates\more_services.html:33
+msgid "1C xizmatlari"
+msgstr "1С услуги"
+
+#: .\templates\more_services.html:12
+msgid ""
+"\n"
+"                    Biz 1C platformasi bilan ishlashda 15 yildan ortiq\n"
+"                    tajribaga ega mutaxassislari jamoasimiz.\n"
+"                    "
+msgstr ""
+"\n"
+"Работаем с платформой 1С более 15 лет\n"
+"наша команда опытных специалистов."
+
+#: .\templates\more_services.html:36
+msgid ""
+"\n"
+"                        Korxonalarga bugungi biznesning raqamli muammolariga javob beradigan, tezroq o'sib boradigan\n"
+"                        va\n"
+"                        o'z bozorlarida etakchilik qiladigan moslashuvchan ERP yechimi. QBA IC yechimlari\n"
+"                        tashkilotlarga\n"
+"                        turli xil biznes jarayonlarini avtomatlashtirishga, ishlashning asosiy ko'rsatkichlarini\n"
+"                        kuzatishga, kompaniyaning bo'limlari va joylari o'rtasidagi faoliyatni va o'zaro\n"
+"                        munosabatlarni\n"
+"                        muvofiqlashtirishga imkon beradi.\n"
+"                        "
+msgstr ""
+"\n"
+"Помогая компаниям расти быстрее, отвечая на цифровые вызовы современного бизнеса\n"
+"и\n"
+"гибкое решение ERP, которое лидирует на своих рынках. Решения QBA IC\n"
+"организациям\n"
+"автоматизация различных бизнес-процессов, ключевые показатели эффективности\n"
+"контролировать деятельность между отделами и локациями компании и между ними\n"
+"отношения\n"
+"позволяет координировать."
+
+#: .\templates\more_services.html:64
+msgid "Inventarizatsiya va omborni boshqarish"
+msgstr "Инвентаризация и управление складом"
+
+#: .\templates\more_services.html:78
+msgid "Kadrlar va ish haqini boshqarish"
+msgstr "Управление персоналом и заработной платой"
+
+#: .\templates\more_services.html:90
+msgid "Buxgalteriya va soliq hisobi"
+msgstr "Бухгалтерский и налоговый учет"
+
+#: .\templates\more_services.html:101
+msgid "Biznes operatsiyalari"
+msgstr "Деловые операции"
+
+#: .\templates\more_services.html:118
+msgid "Sotish va tarqatish"
+msgstr "Продажа и распространение"
+
+#: .\templates\more_services.html:131 .\templates\more_services.html:141
+msgid "Xarid qilish va QQS"
+msgstr "Покупка и НДС"
+
+#: .\templates\more_services.html:152
+msgid "Loyihani hisoblash"
+msgstr "Расчет проекта"
+
+#: .\templates\more_services.html:183
+msgid "MIS va boshqaruv panellari"
+msgstr "ИУС и панели управления"
+
+#: .\templates\more_services.html:193
+msgid "Pul oqimlarini boshqarish"
+msgstr "Управление денежными потоками"
+
+#: .\templates\more_services.html:204
+msgid "ITni qo'llab-quvvatlash"
+msgstr "ИТ поддержка"
+
+#: .\templates\more_services.html:224
+msgid "IOT &amp; Avtomatlashtirish"
+msgstr "IoT и автоматизация"
+
+#: .\templates\more_services.html:252
+msgid "Ishlab chiqarishni boshqarish"
+msgstr "Управление производством"
+
+#: .\templates\more_services.html:263
+msgid "Profilaktik xizmatlar"
+msgstr "Профилактические услуги"
+
+#: .\templates\more_services.html:279
+msgid "Bizning kuchli tomonlarimiz"
+msgstr "Наши сильные стороны"
+
+#: .\templates\more_services.html:282
+msgid ""
+"\n"
+"                        Zamonaviy axborot texnologiyalarini joylash orqali biznes jarayonlarini o'zgartirishda\n"
+"                        mijozlarimizga sezilarli ta'sir\n"
+"                        ko'rsatishni maqsad qilganmiz. Biz ilg'or texnologiyalarga e'tibor qaratamiz va dasturiy\n"
+"                        ta'minot, infratuzilma va bilim\n"
+"                        platformalarida texnologiyaga asoslangan bo'lmagan yechimlarni taqdim etamiz.\n"
+"                        "
+msgstr ""
+"\n"
+"Изменение бизнес-процессов за счет внедрения современных информационных технологий\n"
+"значительное влияние на наших клиентов\n"
+"мы стремимся показать. Мы ориентируемся на передовые технологии и программное обеспечение\n"
+"снабжение, инфраструктура и знания\n"
+"Мы предоставляем нетехнологические решения на наших платформах."
+
+#: .\templates\more_services.html:304
+msgid "dan ortiq malakali mutaxassislar"
+msgstr "более чем квалифицированные специалисты"
+
+#: .\templates\more_services.html:321
+msgid "dan ortiq sertifikatlangan mutaxassislar"
+msgstr "больше, чем сертифицированные специалисты"
+
+#: .\templates\more_services.html:338
+msgid "dan ortiq butun dunyo bo'ylab amalga oshirish"
+msgstr "Во всем мире реализовано более"
+
+#: .\templates\more_services.html:355
+msgid "dan ortiq sohalar bo'yicha global mijozlar"
+msgstr "глобальные клиенты не только в отраслях"
+
+#: .\templates\more_services.html:379
+msgid ""
+"\n"
+"                        Barcha sohalarda xizmat koʻrsatamiz va mavzularga mos keladigan ijobiy,\n"
+"                        foydali javoblarni taqdim etamiz.\n"
+"                        "
+msgstr ""
+"\n"
+"Мы оказываем услуги во всех сферах и обеспечиваем позитивные, актуальные темы.\n"
+"мы даем полезные ответы."
+
+#: .\templates\more_services.html:401
+msgid "Agro"
+msgstr "Агро"
+
+#: .\templates\more_services.html:418
+msgid "O'g'itlar"
+msgstr "Удобрения"
+
+#: .\templates\more_services.html:435
+msgid "To'qimachilik"
+msgstr "Текстиль"
+
+#: .\templates\more_services.html:452
+msgid "IT"
+msgstr "ИТ"
+
+#: .\templates\more_services.html:471
+msgid "Neft va Gaz"
+msgstr "Нефти и газа"
+
+#: .\templates\more_services.html:488
+msgid "Qurilish materiallari"
+msgstr "Строительные материалы"
+
+#: .\templates\more_services.html:505
+msgid "Oziq ovqat"
+msgstr "еда"
+
+#: .\templates\more_services.html:522
+msgid "Transport"
+msgstr "Транспорт"
+
+#~ msgid "Kutish"
+#~ msgstr "Ждать"

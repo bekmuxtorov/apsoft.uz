@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load i18n %}
 {% load static %}
 {% block content %}
 
@@ -7,9 +8,11 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                <h1 data-aos="fade-up">1C xizmatlari</h1>
-                <h2 data-aos="fade-up" data-aos-delay="400">Biz 1C platformasi bilan ishlashda 15 yildan ortiq
+                <h1 data-aos="fade-up">{% trans "1C xizmatlari" %}</h1>
+                <h2 data-aos="fade-up" data-aos-delay="400">{% blocktrans %}
+                    Biz 1C platformasi bilan ishlashda 15 yildan ortiq
                     tajribaga ega mutaxassislari jamoasimiz.
+                    {% endblocktrans %}
                 </h2>
                 <div data-aos="fade-up" data-aos-delay="800">
                     <a href="{% url 'home' %}#contact" class="btn-get-started scrollto">Boshlash</a>
@@ -27,9 +30,10 @@
         <div class="row mt-5">
             <div class="col-md-12">
                 <h2 class="featurette-heading text-center">All Personal Soft</h2>
-                <h2 class="featurette-heading text-center"><label>1C xizmatlari </label></h2>
+                <h2 class="featurette-heading text-center"><label>{% trans "1C xizmatlari" %}</label></h2>
                 <p class="text-center lead">
                     <label>
+                        {% blocktrans %}
                         Korxonalarga bugungi biznesning raqamli muammolariga javob beradigan, tezroq o'sib boradigan
                         va
                         o'z bozorlarida etakchilik qiladigan moslashuvchan ERP yechimi. QBA IC yechimlari
@@ -38,6 +42,7 @@
                         kuzatishga, kompaniyaning bo'limlari va joylari o'rtasidagi faoliyatni va o'zaro
                         munosabatlarni
                         muvofiqlashtirishga imkon beradi.
+                        {% endblocktrans %}
                     </label>
                 </p>
             </div>
@@ -56,7 +61,7 @@
                             <div class="mt-5 text-center">
                                 <h5 class="dark-blue">
                                     <label>
-                                        Inventarizatsiya va omborni boshqarish
+                                        {% trans "Inventarizatsiya va omborni boshqarish" %}
                                     </label>
                                 </h5>
                                 <br>
@@ -70,7 +75,7 @@
                             </div>
                             <div class="mt-5 text-center">
                                 <h5 class="dark-blue">
-                                    <label> Kadrlar va ish haqini boshqarish</label>
+                                    <label> {% trans "Kadrlar va ish haqini boshqarish" %}</label>
                                 </h5>
                             </div>
                         </div>
@@ -82,7 +87,7 @@
                             </div>
                             <div class="mt-5 text-center">
                                 <h5 class="dark-blue">
-                                    <label> Buxgalteriya va soliq hisobi</label>
+                                    <label> {% trans "Buxgalteriya va soliq hisobi" %}</label>
                                 </h5>
                             </div>
                         </div>
@@ -93,7 +98,7 @@
                                 <img src="{% static 'img/svg_images/biznes_.svg' %}">
                             </div>
                             <div class="mt-5 text-center">
-                                <h5 class="dark-blue"><label> Biznes operatsiyalari</label></h5>
+                                <h5 class="dark-blue"><label>{% trans "Biznes operatsiyalari" %}</label></h5>
                                 <br>
                             </div>
                         </div>
@@ -110,8 +115,7 @@
                             <div class="mt-5 text-center">
                                 <h5 class="dark-blue">
                                     <label>
-
-                                        Sotish va tarqatish
+                                        {% trans "Sotish va tarqatish" %}
                                     </label>
                                 </h5>
                                 <br>
@@ -124,7 +128,7 @@
                                 <img src="{% static 'img/svg_images/xariq_qqs2.svg' %}">
                             </div>
                             <div class="mt-5 text-center">
-                                <h5 class="dark-blue"><label> Xarid qilish va QQS </label></h5>
+                                <h5 class="dark-blue"><label>{% trans "Xarid qilish va QQS" %}</label></h5>
                             </div>
                         </div>
                     </div>
@@ -134,7 +138,7 @@
                                 <img src="{% static 'img/svg_images/xarid_qqs.svg' %}">
                             </div>
                             <div class="mt-5 text-center">
-                                <h5 class="dark-blue"><label> Xarid qilish va QQS</label></h5>
+                                <h5 class="dark-blue"><label>{% trans "Xarid qilish va QQS" %}</label></h5>
                                 <br>
                             </div>
                         </div>
@@ -145,7 +149,7 @@
                                 <img src="{% static 'img/svg_images/loyihani_hisoblash.svg' %}">
                             </div>
                             <div class="mt-5 text-center">
-                                <h5 class="dark-blue"><label> Loyihani hisoblash</label></h5>
+                                <h5 class="dark-blue"><label>{% trans "Loyihani hisoblash" %}</label></h5>
                                 <br>
                             </div>
                         </div>
@@ -176,7 +180,7 @@
                                 <img src="{% static 'img/svg_images/mis_boshqaruv.svg' %}">
                             </div>
                             <div class="mt-5 text-center">
-                                <h5 class="dark-blue"><label> MIS va boshqaruv panellari</label></h5>
+                                <h5 class="dark-blue"><label>{% trans "MIS va boshqaruv panellari" %}</label></h5>
                             </div>
                         </div>
                     </div>
@@ -186,7 +190,7 @@
                                 <img src="{% static 'img/svg_images/pul_oqimi.svg' %}">
                             </div>
                             <div class="mt-5 text-center">
-                                <h5 class="dark-blue"><label> Pul oqimlarini boshqarish</label></h5>
+                                <h5 class="dark-blue"><label>{% trans "Pul oqimlarini boshqarish" %}</label></h5>
                                 <br>
                             </div>
                         </div>
@@ -197,7 +201,7 @@
                                 <img src="{% static 'img/svg_images/it_qollab.svg' %}">
                             </div>
                             <div class="mt-5 text-center">
-                                <h5 class="dark-blue"><label> ITni qo'llab-quvvatlash</label></h5>
+                                <h5 class="dark-blue"><label>{% trans "ITni qo'llab-quvvatlash" %}</label></h5>
                                 <br>
                             </div>
                         </div>
@@ -217,7 +221,7 @@
                             <div class="mt-5 text-center">
                                 <h5 class="dark-blue">
                                     <label>
-                                        IOT &amp; Avtomatlashtirish
+                                        {% trans "IOT &amp; Avtomatlashtirish" %}
                                     </label>
                                 </h5>
                                 <br>
@@ -230,8 +234,11 @@
                                 <img src="{% static 'img/svg_images/api.svg' %}">
                             </div>
                             <div class="mt-5 text-center">
-                                <h5 class="dark-blue"><label> API xizmat va uchinchi tomon bilan
-                                        integratsiya</label>
+                                <h5 class="dark-blue">
+                                    <label>
+                                        {% trans "API xizmat va uchinchi tomon bilan
+                                        integratsiya" %}
+                                    </label>
                                 </h5>
                             </div>
                         </div>
@@ -242,7 +249,7 @@
                                 <img src="{% static 'img/svg_images/ishlab_boshqaruv.svg' %}">
                             </div>
                             <div class="mt-5 text-center">
-                                <h5 class="dark-blue"><label> Ishlab chiqarishni boshqarish </label></h5>
+                                <h5 class="dark-blue"><label>{% trans "Ishlab chiqarishni boshqarish" %}</label></h5>
                                 <br>
                             </div>
                         </div>
@@ -253,7 +260,7 @@
                                 <img src="{% static 'img/svg_images/profilaktika.svg' %}">
                             </div>
                             <div class="mt-5 text-center">
-                                <h5 class="dark-blue"><label> Profilaktik xizmatlar </label></h5>
+                                <h5 class="dark-blue"><label>{% trans "Profilaktik xizmatlar" %}</label></h5>
                                 <br>
                             </div>
                         </div>
@@ -269,14 +276,16 @@
     <div class="container">
         <div class="row mt-5">
             <div class="col-md-12 ">
-                <h2 class=" featurette-heading text-center">Bizning kuchli tomonlarimiz</h2>
+                <h2 class=" featurette-heading text-center">{% trans "Bizning kuchli tomonlarimiz" %}</h2>
                 <p class="text-center lead">
                     <label>
+                        {% blocktrans %}
                         Zamonaviy axborot texnologiyalarini joylash orqali biznes jarayonlarini o'zgartirishda
                         mijozlarimizga sezilarli ta'sir
                         ko'rsatishni maqsad qilganmiz. Biz ilg'or texnologiyalarga e'tibor qaratamiz va dasturiy
                         ta'minot, infratuzilma va bilim
                         platformalarida texnologiyaga asoslangan bo'lmagan yechimlarni taqdim etamiz.
+                        {% endblocktrans %}
                     </label>
                 </p>
             </div>
@@ -292,7 +301,7 @@
                                 <h5 class="dark-blue">
                                     <label style="padding-bottom: 10px; font-size: 24px;">2+</label>
                                     <label>
-                                        dan ortiq malakali mutaxassislar
+                                        {% trans "dan ortiq malakali mutaxassislar" %}
                                     </label>
                                 </h5>
                                 <br>
@@ -309,7 +318,7 @@
                                 <h5 class="dark-blue">
                                     <label style="padding-bottom: 10px; font-size: 24px;">2+</label>
                                     <label>
-                                        dan ortiq sertifikatlangan mutaxassislar
+                                        {% trans "dan ortiq sertifikatlangan mutaxassislar" %}
                                     </label>
                                 </h5>
                                 <br>
@@ -326,7 +335,7 @@
                                 <h5 class="dark-blue">
                                     <label style="padding-bottom: 10px; font-size: 24px;">2+</label>
                                     <label>
-                                        dan ortiq butun dunyo bo'ylab amalga oshirish
+                                        {% trans "dan ortiq butun dunyo bo'ylab amalga oshirish" %}
                                     </label>
                                 </h5>
                                 <br>
@@ -343,7 +352,7 @@
                                 <h5 class="dark-blue">
                                     <label style="padding-bottom: 10px; font-size: 24px;">2+</label>
                                     <label>
-                                        dan ortiq sohalar bo'yicha global mijozlar
+                                        {% trans "dan ortiq sohalar bo'yicha global mijozlar" %}
                                     </label>
                                 </h5>
                                 <br>
@@ -364,10 +373,13 @@
     <div class="container">
         <div class="row mt-5">
             <div class="col-md-12">
-                <h2 class="featurette-heading text-center">Biz xizmat ko'rsatadigan sohalar</h2>
+                <h2 class="featurette-heading text-center">{% trans "Biz xizmat ko'rsatadigan sohalar" %}</h2>
                 <p class="text-center lead">
                     <label>
-                        Biz xizmat ko'rsatadigan sohalar
+                        {% blocktrans %}
+                        Barcha sohalarda xizmat koʻrsatamiz va mavzularga mos keladigan ijobiy,
+                        foydali javoblarni taqdim etamiz.
+                        {% endblocktrans %}
                     </label>
                 </p>
             </div>
@@ -386,7 +398,7 @@
                             <div class="mt-5 text-center">
                                 <h5 class="dark-blue">
                                     <label>
-                                        Agro
+                                        {% trans "Agro" %}
                                     </label>
                                 </h5>
                                 <br>
@@ -403,7 +415,7 @@
                             <div class="mt-5 text-center">
                                 <h5 class="dark-blue">
                                     <label>
-                                        O'g'itlar
+                                        {% trans "O'g'itlar" %}
                                     </label>
                                 </h5>
                                 <br>
@@ -420,7 +432,7 @@
                             <div class="mt-5 text-center">
                                 <h5 class="dark-blue">
                                     <label>
-                                        To'qimachilik
+                                        {% trans "To'qimachilik" %}
                                     </label>
                                 </h5>
                                 <br>
@@ -437,7 +449,7 @@
                             <div class="mt-5 text-center">
                                 <h5 class="dark-blue">
                                     <label>
-                                        IT
+                                        {% trans "IT" %}
                                     </label>
                                 </h5>
                                 <br>
@@ -456,7 +468,7 @@
                             <div class="mt-5 text-center">
                                 <h5 class="dark-blue">
                                     <label>
-                                        Neft va Gaz
+                                        {% trans "Neft va Gaz" %}
                                     </label>
                                 </h5>
                                 <br>
@@ -473,7 +485,7 @@
                             <div class="mt-5 text-center">
                                 <h5 class="dark-blue">
                                     <label>
-                                        Qurilish materiallari
+                                        {% trans "Qurilish materiallari" %}
                                     </label>
                                 </h5>
                                 <br>
@@ -490,7 +502,7 @@
                             <div class="mt-5 text-center">
                                 <h5 class="dark-blue">
                                     <label>
-                                        Oziq ovqat
+                                        {% trans "Oziq ovqat" %}
                                     </label>
                                 </h5>
                                 <br>
@@ -507,7 +519,7 @@
                             <div class="mt-5 text-center">
                                 <h5 class="dark-blue">
                                     <label>
-                                        Transport
+                                        {% trans "Transport" %}
                                     </label>
                                 </h5>
                                 <br>
